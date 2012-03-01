@@ -7,6 +7,7 @@
 //
 
 #import "Ex06AppDelegate.h"
+#import "MyUIViewController.h"
 
 @implementation Ex06AppDelegate
 
@@ -23,7 +24,16 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+
+    
+    MyUIViewController *vc = [[MyUIViewController alloc] initWithNibName:@"MyUIViewController" bundle:nil];
+    self.window.rootViewController =vc;
+    [vc release];
     [self.window makeKeyAndVisible];
+    
+    [vc.myLabel setText:@"Porter"];
+    [vc.myImageView setImage:[UIImage imageNamed:@"BeerIcon001.png"]];
+    
     return YES;
 }
 
