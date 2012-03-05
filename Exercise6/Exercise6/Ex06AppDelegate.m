@@ -8,7 +8,7 @@
 
 #import "Ex06AppDelegate.h"
 #import "MyUIViewController.h"
-
+#import "PickerViewObject.h"
 @implementation Ex06AppDelegate
 
 @synthesize window = _window;
@@ -31,9 +31,25 @@
     [vc release];
     [self.window makeKeyAndVisible];
     
-    [vc.myLabel setText:@"Porter"];
-    [vc.myImageView setImage:[UIImage imageNamed:@"BeerIcon001.png"]];
+
+ 
+     
+     
+     PickerViewObject *pkvo = [[PickerViewObject alloc] init];
+  
+    pkvo.myImageView = vc.myImageView;
+    pkvo.myLabel = vc.myLabel;
     
+    [pkvo.myLabel setText:@"Porter"];
+    [pkvo.myImageView setImage:[UIImage imageNamed:@"BeerIcon001.png"]];
+
+     //pkvo.myPickerView = self.myPickerView;
+     
+     vc.myPickerView.dataSource = pkvo;//.myPickerView.dataSource;
+     vc.myPickerView.delegate = pkvo;//.myPickerView.delegate;
+     
+     
+     
     return YES;
 }
 

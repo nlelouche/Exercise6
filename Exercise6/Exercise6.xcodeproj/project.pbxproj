@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3B9DAE150507C000138A24 /* PickerViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3B9DAD150507C000138A24 /* PickerViewObject.m */; };
 		EA4A858C14FFB58900517DB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4A858B14FFB58900517DB9 /* UIKit.framework */; };
 		EA4A858E14FFB58900517DB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4A858D14FFB58900517DB9 /* Foundation.framework */; };
 		EA4A859014FFB58900517DB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4A858F14FFB58900517DB9 /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3B9DAC150507C000138A24 /* PickerViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewObject.h; sourceTree = "<group>"; };
+		EA3B9DAD150507C000138A24 /* PickerViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewObject.m; sourceTree = "<group>"; };
 		EA4A858714FFB58900517DB9 /* Exercise6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4A858B14FFB58900517DB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA4A858D14FFB58900517DB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +104,8 @@
 				EA4A859414FFB58900517DB9 /* InfoPlist.strings */,
 				EA4A859714FFB58900517DB9 /* main.m */,
 				EA4A859914FFB58900517DB9 /* Exercise6-Prefix.pch */,
+				EA3B9DAC150507C000138A24 /* PickerViewObject.h */,
+				EA3B9DAD150507C000138A24 /* PickerViewObject.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				EA4A859814FFB58900517DB9 /* main.m in Sources */,
 				EA4A859C14FFB58900517DB9 /* Ex06AppDelegate.m in Sources */,
 				EA4A85A514FFB8DE00517DB9 /* MyUIViewController.m in Sources */,
+				EA3B9DAE150507C000138A24 /* PickerViewObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +290,7 @@
 				EA4A85A114FFB58900517DB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
